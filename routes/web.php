@@ -32,8 +32,7 @@ Route::get('/', function () {
     'name' => $name
  ]);
 });
-*/
-
+5
 Route::get('/posts/{post}', function ($post) {
     //data store
     $posts = [
@@ -50,3 +49,7 @@ Route::get('/posts/{post}', function ($post) {
         'post' => $posts[$post]
     ]);
 });
+*/
+
+
+Route::get('/posts/{post}', 'App\Http\Controllers\PostsController@show');
